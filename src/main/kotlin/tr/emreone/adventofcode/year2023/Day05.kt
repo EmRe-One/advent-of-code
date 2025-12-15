@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.Logger.logger
 import tr.emreone.kotlin_utils.automation.Day
@@ -36,7 +36,7 @@ class Day05 : Day(5, 2023, "If You Give A Seed A Fertilizer") {
 
         fun mapNumber(x: Long): Long {
             if (this.inRange(x))
-                return x + this.offset;
+                return x + this.offset
 
             return x
         }
@@ -73,7 +73,7 @@ class Day05 : Day(5, 2023, "If You Give A Seed A Fertilizer") {
                     logger.debug { "-> " + process.next() + ": " }
 
                     currentNumber = maps[title]
-                        ?.firstOrNull() {
+                        ?.firstOrNull {
                             it.inRange(currentNumber)
                         }
                         ?.mapNumber(currentNumber)
@@ -125,7 +125,7 @@ class Day05 : Day(5, 2023, "If You Give A Seed A Fertilizer") {
                     val title = "${process.currentStep}-to-${process.next()}"
 
                     currentNumber = maps[title]
-                        ?.firstOrNull() {
+                        ?.firstOrNull {
                             it.inRange(currentNumber)
                         }
                         ?.mapNumber(currentNumber)

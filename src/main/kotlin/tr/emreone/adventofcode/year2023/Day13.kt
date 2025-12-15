@@ -1,7 +1,6 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
-import java.lang.IllegalStateException
 
 class Day13 : Day(13, 2023, "Point of Incidence") {
 
@@ -55,7 +54,7 @@ class Day13 : Day(13, 2023, "Point of Incidence") {
         }
 
         fun getScore(originalGrid: Grid? = null): Int {
-            val possibleVerticalLines  = (0 until this.area.lastIndex).filter {
+            val possibleVerticalLines = (0 until this.area.lastIndex).filter {
                 isVerticalReflectedAt(it)
             }
             if (possibleVerticalLines.isNotEmpty()) {
@@ -90,8 +89,8 @@ class Day13 : Day(13, 2023, "Point of Incidence") {
         }
 
         fun getAlternativeScore(): Int {
-            for(yi in this.area.indices) {
-                for(xi in this.area.get(yi).indices) {
+            for (yi in this.area.indices) {
+                for (xi in this.area.get(yi).indices) {
                     val alternativeGrid = getCopyWithToggledCell(xi, yi)
                     val aScore = alternativeGrid.getScore(this)
 
@@ -105,7 +104,7 @@ class Day13 : Day(13, 2023, "Point of Incidence") {
         }
 
         fun print() {
-            for(y in this.area.indices) {
+            for (y in this.area.indices) {
                 println(this.area[y].joinToString(""))
             }
         }
@@ -122,7 +121,7 @@ class Day13 : Day(13, 2023, "Point of Incidence") {
         return inputAsString.split("(\\r?\\n){2}".toRegex())
             .sumOf {
                 val grid = Grid(it)
-                val score = grid.getScore()
+                grid.getScore()
                 grid.getAlternativeScore()
             }
     }

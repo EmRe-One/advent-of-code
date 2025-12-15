@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.automation.extractAllIntegers
@@ -10,9 +10,9 @@ enum class Category(name: String) {
     S("Shiny")
 }
 
-typealias PotentialPart = Map<tr.emreone.adventofcode23.days.Category, IntRange>
+typealias PotentialPart = Map<Category, IntRange>
 
-fun tr.emreone.adventofcode23.days.PotentialPart.patch(category: tr.emreone.adventofcode23.days.Category, newRange: IntRange?): tr.emreone.adventofcode23.days.PotentialPart? {
+fun PotentialPart.patch(category: Category, newRange: IntRange?): PotentialPart? {
     return newRange?.let { patched ->
         val parts = this.toMutableMap()
         parts[category] = patched
@@ -21,7 +21,7 @@ fun tr.emreone.adventofcode23.days.PotentialPart.patch(category: tr.emreone.adve
     }
 }
 
-fun tr.emreone.adventofcode23.days.PotentialPart.combinations(): Long {
+fun PotentialPart.combinations(): Long {
     return this.values.fold(1) { acc, i ->
         acc * (i.last - i.first + 1L)
     }
@@ -31,10 +31,10 @@ class Day19 : Day(19, 2023, "Aplenty") {
 
     sealed interface Rule {
         val next: String
-        fun matches(part: Map<tr.emreone.adventofcode23.days.Category, Int>): Boolean
-        fun split(parts: tr.emreone.adventofcode23.days.PotentialPart): Pair<tr.emreone.adventofcode23.days.PotentialPart?, tr.emreone.adventofcode23.days.PotentialPart?>
+        fun matches(part: Map<Category, Int>): Boolean
+        fun split(parts: PotentialPart): Pair<PotentialPart?, PotentialPart?>
 
-        data class LessThan(val category: tr.emreone.adventofcode23.days.Category, val value: Int, override val next: String) : Rule {
+        data class LessThan(val category: Category, val value: Int, override val next: String) : Rule {
             override fun matches(part: Map<Category, Int>) = part[category]!! < value
 
             override fun split(parts: PotentialPart): Pair<PotentialPart?, PotentialPart?> {

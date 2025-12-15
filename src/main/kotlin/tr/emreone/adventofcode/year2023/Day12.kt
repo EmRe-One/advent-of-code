@@ -1,6 +1,6 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
-import tr.emreone.adventofcode23.CacheSupport.withCaching
+import tr.emreone.adventofcode.CacheSupport.withCaching
 import tr.emreone.kotlin_utils.automation.Day
 
 class Day12 : Day(12, 2023, "Hot Springs") {
@@ -61,34 +61,29 @@ class Day12 : Day(12, 2023, "Hot Springs") {
         private fun process(state: State): Long = withCaching(state) {
             if (it.lastGroupIndex >= this.groups.size) {
                 0L
-            }
-            else if (!it.isGroupActive && it.lastGroupSize < this.groups.getOrElse(it.lastGroupIndex, { 0 })) {
+            } else if (!it.isGroupActive && it.lastGroupSize < this.groups.getOrElse(it.lastGroupIndex, { 0 })) {
                 0L
-            }
-            else if (it.lastGroupSize > this.groups.getOrElse(it.lastGroupIndex, { 0 })) {
+            } else if (it.lastGroupSize > this.groups.getOrElse(it.lastGroupIndex, { 0 })) {
                 0L
-            }
-            else if (it.charIndex == this.spring.length) {
+            } else if (it.charIndex == this.spring.length) {
                 // Check for completeness
                 if (it.lastGroupSize == this.groups.getOrElse(it.lastGroupIndex, { 0 })
                     && it.lastGroupIndex == this.groups.size - 1
                 ) {
                     1L
-                }
-                else {
+                } else {
                     0L
                 }
-            }
-            else {
+            } else {
                 var total = 0L
                 when (this.spring[it.charIndex]) {
-                    UNKNOWN_STATE  -> {
+                    UNKNOWN_STATE -> {
                         // Wildcard, process both options
                         total += process(state = it.nextState(inGroup = false))
                         total += process(state = it.nextState(inGroup = true))
                     }
 
-                    EMPTY          -> {
+                    EMPTY -> {
                         // Finish group if possible
                         total += process(state = it.nextState(inGroup = false))
                     }

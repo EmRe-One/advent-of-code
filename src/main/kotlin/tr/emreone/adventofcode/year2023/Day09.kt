@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 
@@ -6,8 +6,8 @@ typealias Sequence = MutableList<Long>
 
 class Day09 : Day(9, 2023, "Mirage Maintenance") {
 
-    private fun predictNext(sequence: tr.emreone.adventofcode23.days.Sequence): Long {
-        val differences = mutableListOf<tr.emreone.adventofcode23.days.Sequence>()
+    private fun predictNext(sequence: Sequence): Long {
+        val differences = mutableListOf<Sequence>()
 
         differences.add(sequence.windowed(2).map { it[1] - it[0] }.toMutableList())
 
@@ -33,8 +33,8 @@ class Day09 : Day(9, 2023, "Mirage Maintenance") {
         return sequence.last()
     }
 
-    private fun predictPrevious(sequence: tr.emreone.adventofcode23.days.Sequence): Long {
-        val differences = mutableListOf<tr.emreone.adventofcode23.days.Sequence>()
+    private fun predictPrevious(sequence: Sequence): Long {
+        val differences = mutableListOf<Sequence>()
 
         differences.add(sequence.windowed(2).map { it[1] - it[0] }.toMutableList())
 

@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.data_structures.Dijkstra
@@ -78,7 +78,11 @@ class Day17 : Day(17, 2023, "Clumsy Crucible") {
 
         val start = State(origin, 0, null)
 
-        val x = Dijkstra(start, graph::neighborsOf, graph::cost).search { it.pos == area.lowerRight && it.movedStraight >= 4 }
+        val x = Dijkstra(
+            start,
+            graph::neighborsOf,
+            graph::cost
+        ).search { it.pos == area.lowerRight && it.movedStraight >= 4 }
 
         val path = x.path
         heatMap.formatted { pos, v ->

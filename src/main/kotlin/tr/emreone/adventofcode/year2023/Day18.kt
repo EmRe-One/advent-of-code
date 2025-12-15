@@ -1,13 +1,11 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
-
 import tr.emreone.kotlin_utils.extensions.MutableMapGrid
 import tr.emreone.kotlin_utils.extensions.area
 import tr.emreone.kotlin_utils.extensions.formatted
 import tr.emreone.kotlin_utils.math.*
-import java.util.LinkedList
-import kotlin.collections.forEach
+import java.util.*
 import kotlin.math.abs
 
 class Day18 : Day(18, 2023, "Lavaduct Lagoon") {

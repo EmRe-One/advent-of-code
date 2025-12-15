@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.Coords
@@ -38,30 +38,29 @@ class Day16 : Day(16, 2023, "The Floor Will Be Lava") {
             tile.energized = true
             if (tile.rayDirections.contains(direction)) {
                 return
-            }
-            else {
+            } else {
                 tile.rayDirections.add(direction)
             }
 
             val nextDirections = buildList {
                 when (tile.tile) {
-                    EMPTY               -> add(direction)
-                    SPLITTER_VERTICAL   -> addAll(listOf(Direction4.SOUTH, Direction4.NORTH))
+                    EMPTY -> add(direction)
+                    SPLITTER_VERTICAL -> addAll(listOf(Direction4.SOUTH, Direction4.NORTH))
                     SPLITTER_HORIZONTAL -> addAll(listOf(Direction4.EAST, Direction4.WEST))
-                    MIRROR_TR_BL        -> {
+                    MIRROR_TR_BL -> {
                         when (direction) {
-                            Direction4.EAST  -> add(Direction4.NORTH)
+                            Direction4.EAST -> add(Direction4.NORTH)
                             Direction4.SOUTH -> add(Direction4.WEST)
-                            Direction4.WEST  -> add(Direction4.SOUTH)
+                            Direction4.WEST -> add(Direction4.SOUTH)
                             Direction4.NORTH -> add(Direction4.EAST)
                         }
                     }
 
-                    MIRROR_TL_BR        -> {
+                    MIRROR_TL_BR -> {
                         when (direction) {
-                            Direction4.EAST  -> add(Direction4.SOUTH)
+                            Direction4.EAST -> add(Direction4.SOUTH)
                             Direction4.SOUTH -> add(Direction4.EAST)
-                            Direction4.WEST  -> add(Direction4.NORTH)
+                            Direction4.WEST -> add(Direction4.NORTH)
                             Direction4.NORTH -> add(Direction4.WEST)
                         }
                     }
@@ -87,30 +86,29 @@ class Day16 : Day(16, 2023, "The Floor Will Be Lava") {
                 tile.energized = true
                 if (tile.rayDirections.contains(direction)) {
                     continue
-                }
-                else {
+                } else {
                     tile.rayDirections.add(direction)
                 }
 
                 val nextDirections = buildList {
                     when (tile.tile) {
-                        EMPTY               -> add(direction)
-                        SPLITTER_VERTICAL   -> addAll(listOf(Direction4.SOUTH, Direction4.NORTH))
+                        EMPTY -> add(direction)
+                        SPLITTER_VERTICAL -> addAll(listOf(Direction4.SOUTH, Direction4.NORTH))
                         SPLITTER_HORIZONTAL -> addAll(listOf(Direction4.EAST, Direction4.WEST))
-                        MIRROR_TR_BL        -> {
+                        MIRROR_TR_BL -> {
                             when (direction) {
-                                Direction4.EAST  -> add(Direction4.NORTH)
+                                Direction4.EAST -> add(Direction4.NORTH)
                                 Direction4.SOUTH -> add(Direction4.WEST)
-                                Direction4.WEST  -> add(Direction4.SOUTH)
+                                Direction4.WEST -> add(Direction4.SOUTH)
                                 Direction4.NORTH -> add(Direction4.EAST)
                             }
                         }
 
-                        MIRROR_TL_BR        -> {
+                        MIRROR_TL_BR -> {
                             when (direction) {
-                                Direction4.EAST  -> add(Direction4.SOUTH)
+                                Direction4.EAST -> add(Direction4.SOUTH)
                                 Direction4.SOUTH -> add(Direction4.EAST)
-                                Direction4.WEST  -> add(Direction4.NORTH)
+                                Direction4.WEST -> add(Direction4.NORTH)
                                 Direction4.NORTH -> add(Direction4.WEST)
                             }
                         }
@@ -131,22 +129,20 @@ class Day16 : Day(16, 2023, "The Floor Will Be Lava") {
                             if (t.energized) {
                                 if (t.rayDirections.size == 1) {
                                     when (t.rayDirections.first()) {
-                                        Direction4.EAST  -> print('>')
+                                        Direction4.EAST -> print('>')
                                         Direction4.SOUTH -> print('v')
-                                        Direction4.WEST  -> print('<')
+                                        Direction4.WEST -> print('<')
                                         Direction4.NORTH -> print('^')
                                     }
-                                }
-                                else {
+                                } else {
                                     print(t.rayDirections.size)
                                 }
-                            }
-                            else {
+                            } else {
                                 print(EMPTY)
                             }
                         }
 
-                        else  -> print(t.tile)
+                        else -> print(t.tile)
                     }
                 }
                 println()
@@ -196,7 +192,7 @@ class Day16 : Day(16, 2023, "The Floor Will Be Lava") {
         }
         for (y in 0 until height) {
             val grid = Grid(inputAsList)
-            grid.raytraceIterative(Coords(width-1, y), Direction4.WEST)
+            grid.raytraceIterative(Coords(width - 1, y), Direction4.WEST)
             val energie = grid.tiles.flatten().count { it.energized }
             if (energie > maxEnergie) {
                 maxEnergie = energie

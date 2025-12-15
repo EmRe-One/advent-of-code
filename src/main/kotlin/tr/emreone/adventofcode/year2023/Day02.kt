@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 
@@ -16,7 +16,7 @@ class Day02 : Day(2, 2023, "Cube Conundrum") {
         fun possible(): Boolean {
             return this.red <= MAX_RED
                     && this.green <= MAX_GREEN
-                    && this.blue <= MAX_BLUE;
+                    && this.blue <= MAX_BLUE
         }
     }
 

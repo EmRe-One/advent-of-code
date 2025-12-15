@@ -1,7 +1,7 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
-import tr.emreone.kotlin_utils.math.*
+import tr.emreone.kotlin_utils.math.chineseRemainder
 
 class Day20 : Day(20, 2023, "Pulse Propagation") {
 

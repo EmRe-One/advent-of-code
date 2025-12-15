@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import org.junit.jupiter.api.Test
 import tr.emreone.kotlin_utils.Resources
@@ -9,7 +9,7 @@ internal class Day07Test {
     @Test
     fun `execute_tests`() {
         solve<Day07>(false) {
-            Resources.resourceAsList("day07_example.txt")
+            Resources.resourceAsList("year2023/day07_example.txt")
                 .joinToString("\n") part1 6440 part2 5905
         }
     }

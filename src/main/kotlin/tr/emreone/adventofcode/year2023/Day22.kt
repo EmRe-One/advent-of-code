@@ -1,13 +1,8 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
-import tr.emreone.adventofcode.days.Day22.Brick.Companion.GROUND
+import tr.emreone.adventofcode.year2023.Day22.Brick.Companion.GROUND
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.extensions.intersects
-import tr.emreone.kotlin_utils.math.Point3D
-import java.util.*
-import kotlin.collections.ArrayDeque
-import kotlin.math.max
-import kotlin.math.min
 
 class Day22 : Day(22, 2023, "Sand Slabs") {
 

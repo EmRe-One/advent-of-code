@@ -1,12 +1,7 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
-import tr.emreone.kotlin_utils.math.Direction4
-import tr.emreone.kotlin_utils.math.Point
-import tr.emreone.kotlin_utils.math.minus
-import tr.emreone.kotlin_utils.math.plus
-import tr.emreone.kotlin_utils.math.x
-import tr.emreone.kotlin_utils.math.y
+import tr.emreone.kotlin_utils.math.*
 import kotlin.math.max
 
 class Day23 : Day(23, 2023, "A Long Walk") {

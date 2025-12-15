@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.Coords
@@ -55,7 +55,7 @@ class Day14 : Day(14, 2023, "Parabolic Reflector Dish") {
                     }
                 }
 
-                Direction4.EAST  -> {
+                Direction4.EAST -> {
                     for (yi in 0 until height) {
                         for (xi in (width - 1) downTo 0) {
                             this._move(xi, yi, direction)
@@ -71,7 +71,7 @@ class Day14 : Day(14, 2023, "Parabolic Reflector Dish") {
                     }
                 }
 
-                Direction4.WEST  -> {
+                Direction4.WEST -> {
                     for (yi in 0 until height) {
                         for (xi in 0 until width) {
                             this._move(xi, yi, direction)
@@ -93,8 +93,7 @@ class Day14 : Day(14, 2023, "Parabolic Reflector Dish") {
                 line.map {
                     if (it == ROUNDED_ROCK) {
                         (height - index).toLong()
-                    }
-                    else {
+                    } else {
                         0L
                     }
                 }.sum()

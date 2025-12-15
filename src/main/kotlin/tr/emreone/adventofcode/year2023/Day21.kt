@@ -1,16 +1,10 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
-import tr.emreone.kotlin_utils.automation.solve
 import tr.emreone.kotlin_utils.extensions.area
 import tr.emreone.kotlin_utils.extensions.height
 import tr.emreone.kotlin_utils.extensions.width
-import tr.emreone.kotlin_utils.math.Point
-import tr.emreone.kotlin_utils.math.contains
-import tr.emreone.kotlin_utils.math.directNeighbors
-import tr.emreone.kotlin_utils.math.pow
-import tr.emreone.kotlin_utils.math.x
-import tr.emreone.kotlin_utils.math.y
+import tr.emreone.kotlin_utils.math.*
 
 class Day21 : Day(21, 2023, "Step Counter") {
 
@@ -66,14 +60,13 @@ class Day21 : Day(21, 2023, "Step Counter") {
             }
 
             point.directNeighbors().forEach {
-                if (withOverflow ) {
+                if (withOverflow) {
                     val adjustedPoint = Point(it.x.mod(this.mapSize), it.y.mod(this.mapSize))
                     if (map[adjustedPoint.y][adjustedPoint.x] != '#' && it !in seenGardenPlots) {
                         q.add(it to remainingSteps - 1)
                         seenGardenPlots.add(it)
                     }
-                }
-                else {
+                } else {
                     if (it in area && map[it.y][it.x] != '#' && it !in seenGardenPlots) {
                         q.add(it to remainingSteps - 1)
                         seenGardenPlots.add(it)

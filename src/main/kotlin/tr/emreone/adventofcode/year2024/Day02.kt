@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode24.days
+package tr.emreone.adventofcode.year2024
 
 import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day

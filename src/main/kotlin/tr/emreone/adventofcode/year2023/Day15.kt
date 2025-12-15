@@ -1,4 +1,4 @@
-package tr.emreone.adventofcode23.days
+package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.automation.Day
 
@@ -55,8 +55,7 @@ class Day15 : Day(15, 2023, "Lens Library") {
                         if (i >= 0) {
                             box.removeAt(i)
                             box.add(i, lens)
-                        }
-                        else {
+                        } else {
                             box.add(lens)
                         }
 
