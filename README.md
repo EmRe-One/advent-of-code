@@ -38,13 +38,13 @@ I collect all my solutions from all AoCs in this single repository.
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day04.kt">Day04.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2025/Day04Test.kt">Day04Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2025/day/5"><img src="aoc_tiles/2025/05.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day05.kt">Day05.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2025/Day05Test.kt">Day05Test.kt</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2025/day/6"><img src="aoc_tiles/2025/06.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day06.kt">Day06.kt</a> |
@@ -60,6 +60,8 @@ I collect all my solutions from all AoCs in this single repository.
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day08.kt">Day08.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2025/Day08Test.kt">Day08Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2025/day/9"><img src="aoc_tiles/2025/09.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day09.kt">Day09.kt</a> |
@@ -70,8 +72,6 @@ I collect all my solutions from all AoCs in this single repository.
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day10.kt">Day10.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2025/Day10Test.kt">Day10Test.kt</a>
     </td>
-  </tr>
-  <tr>
      <td align="center">
         <a href="https://adventofcode.com/2025/day/11"><img src="aoc_tiles/2025/11.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2025/Day11.kt">Day11.kt</a> |
@@ -192,13 +192,13 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day04.kt">Day04.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day04Test.kt">Day04Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/5"><img src="aoc_tiles/2024/05.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day05.kt">Day05.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day05Test.kt">Day05Test.kt</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/6"><img src="aoc_tiles/2024/06.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day06.kt">Day06.kt</a> |
@@ -214,6 +214,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day08.kt">Day08.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day08Test.kt">Day08Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/9"><img src="aoc_tiles/2024/09.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day09.kt">Day09.kt</a> |
@@ -224,8 +226,6 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day10.kt">Day10.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day10Test.kt">Day10Test.kt</a>
     </td>
-  </tr>
-  <tr>
      <td align="center">
         <a href="https://adventofcode.com/2024/day/11"><img src="aoc_tiles/2024/11.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day11.kt">Day11.kt</a> |
@@ -236,6 +236,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day12.kt">Day12.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day12Test.kt">Day12Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/13"><img src="aoc_tiles/2024/13.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day13.kt">Day13.kt</a> |
@@ -251,13 +253,13 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day15.kt">Day15.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day15Test.kt">Day15Test.kt</a>
     </td>
-  </tr>
-  <tr>
      <td align="center">
         <a href="https://adventofcode.com/2024/day/16"><img src="aoc_tiles/2024/16.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day16.kt">Day16.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day16Test.kt">Day16Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/17"><img src="aoc_tiles/2024/17.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day17.kt">Day17.kt</a> |
@@ -280,7 +282,7 @@ gradle generateAocTiles
     </td>
   </tr>
   <tr>
-     <td align="center">
+    <td align="center">
         <a href="https://adventofcode.com/2024/day/21"><img src="aoc_tiles/2024/21.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day21.kt">Day21.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day21Test.kt">Day21Test.kt</a>
@@ -300,6 +302,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day24.kt">Day24.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2024/Day24Test.kt">Day24Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2024/day/25"><img src="aoc_tiles/2024/25.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2024/Day25.kt">Day25.kt</a> |
@@ -334,13 +338,13 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day04.kt">Day04.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day04Test.kt">Day04Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/5"><img src="aoc_tiles/2023/05.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day05.kt">Day05.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day05Test.kt">Day05Test.kt</a>
     </td>
-  </tr>
-  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/6"><img src="aoc_tiles/2023/06.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day06.kt">Day06.kt</a> |
@@ -356,6 +360,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day08.kt">Day08.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day08Test.kt">Day08Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/9"><img src="aoc_tiles/2023/09.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day09.kt">Day09.kt</a> |
@@ -366,8 +372,6 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day10.kt">Day10.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day10Test.kt">Day10Test.kt</a>
     </td>
-  </tr>
-  <tr>
      <td align="center">
         <a href="https://adventofcode.com/2023/day/11"><img src="aoc_tiles/2023/11.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day11.kt">Day11.kt</a> |
@@ -378,6 +382,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day12.kt">Day12.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day12Test.kt">Day12Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/13"><img src="aoc_tiles/2023/13.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day13.kt">Day13.kt</a> |
@@ -393,13 +399,13 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day15.kt">Day15.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day15Test.kt">Day15Test.kt</a>
     </td>
-  </tr>
-  <tr>
      <td align="center">
         <a href="https://adventofcode.com/2023/day/16"><img src="aoc_tiles/2023/16.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day16.kt">Day16.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day16Test.kt">Day16Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/17"><img src="aoc_tiles/2023/17.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day17.kt">Day17.kt</a> |
@@ -442,6 +448,8 @@ gradle generateAocTiles
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day24.kt">Day24.kt</a> |
         <a href="src/test/kotlin/tr/emreone/adventofcode/year2023/Day24Test.kt">Day24Test.kt</a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
         <a href="https://adventofcode.com/2023/day/25"><img src="aoc_tiles/2023/25.png" width="200"/></a> <br/>
         <a href="src/main/kotlin/tr/emreone/adventofcode/year2023/Day25.kt">Day25.kt</a> |
