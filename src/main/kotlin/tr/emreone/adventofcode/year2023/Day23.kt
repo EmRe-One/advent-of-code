@@ -1,10 +1,16 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.*
 import kotlin.math.max
 
-class Day23 : Day(23, 2023, "A Long Walk") {
+class Day23 : Day(
+    23,
+    2023,
+    "A Long Walk",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     private val grid = inputAsGrid
     private val start = Point(grid.first().indexOfFirst { it == '.' }, 0)

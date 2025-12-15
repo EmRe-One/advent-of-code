@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.lcm
 
-class Day08 : Day(8, 2023, "Haunted Wasteland") {
+class Day08 : Day(
+    8,
+    2023,
+    "Haunted Wasteland",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     private fun parseInput(): Pair<List<Int>, Map<String, List<String>>> {
         val command = inputAsList[0].toCharArray().map { if (it == 'L') 0 else 1 }

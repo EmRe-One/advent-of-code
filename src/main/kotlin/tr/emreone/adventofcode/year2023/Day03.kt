@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day03 : Day(3, 2023, "Gear Ratios") {
+class Day03 : Day(
+    3,
+    2023,
+    "Gear Ratios",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Part(val x: Int, val y: Int, val value: Int) {
         fun getNeighbourFields(engine: Engine): List<Char> {

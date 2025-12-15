@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.extensions.times
 
-class Day07 : Day(7, 2023, "Camel Cards") {
+class Day07 : Day(
+    7,
+    2023,
+    "Camel Cards",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Hand(val hand: String, val value: Int, val withJoker: Boolean = false) : Comparable<Hand> {
         val CARDS = buildList<String> {

@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day02 : Day(2, 2023, "Cube Conundrum") {
+class Day02 : Day(
+    2,
+    2023,
+    "Cube Conundrum",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Bag(
         val red: Int = 0,

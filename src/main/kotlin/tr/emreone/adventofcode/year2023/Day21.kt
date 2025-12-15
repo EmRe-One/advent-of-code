@@ -1,12 +1,18 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.extensions.area
 import tr.emreone.kotlin_utils.extensions.height
 import tr.emreone.kotlin_utils.extensions.width
 import tr.emreone.kotlin_utils.math.*
 
-class Day21 : Day(21, 2023, "Step Counter") {
+class Day21 : Day(
+    21,
+    2023,
+    "Step Counter",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     val map = inputAsGrid
     private val area = map.area

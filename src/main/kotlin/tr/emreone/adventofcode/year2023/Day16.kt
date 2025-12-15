@@ -1,11 +1,17 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.Coords
 import tr.emreone.kotlin_utils.math.Direction4
 import tr.emreone.kotlin_utils.math.plus
 
-class Day16 : Day(16, 2023, "The Floor Will Be Lava") {
+class Day16 : Day(
+    16,
+    2023,
+    "The Floor Will Be Lava",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Tile(var tile: Char) {
         var energized: Boolean = false

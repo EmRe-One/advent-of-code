@@ -1,10 +1,16 @@
 package tr.emreone.adventofcode.year2023
 
 import tr.emreone.adventofcode.year2023.Day22.Brick.Companion.GROUND
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.extensions.intersects
 
-class Day22 : Day(22, 2023, "Sand Slabs") {
+class Day22 : Day(
+    22,
+    2023,
+    "Sand Slabs",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     private data class Brick(val id: Int, val x: IntRange, val y: IntRange, val z: IntRange) : Comparable<Brick> {
         val supporting = mutableSetOf<Brick>()

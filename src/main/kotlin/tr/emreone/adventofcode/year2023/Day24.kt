@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day24 : Day(24, 2023, "Never Tell Me The Odds") {
+class Day24 : Day(
+    24,
+    2023,
+    "Never Tell Me The Odds",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     override fun part1(): Int {
         val range: ClosedFloatingPointRange<Double> = if (inputAsList.size <= 10) {

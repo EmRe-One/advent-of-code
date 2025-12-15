@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day13 : Day(13, 2023, "Point of Incidence") {
+class Day13 : Day(
+    13,
+    2023,
+    "Point of Incidence",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Grid(input: String) {
         val area: List<List<Char>>

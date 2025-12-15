@@ -1,5 +1,6 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.automation.extractAllIntegers
 
@@ -27,7 +28,12 @@ fun PotentialPart.combinations(): Long {
     }
 }
 
-class Day19 : Day(19, 2023, "Aplenty") {
+class Day19 : Day(
+    19,
+    2023,
+    "Aplenty",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     sealed interface Rule {
         val next: String

@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day06 : Day(6, 2023, "Wait For It") {
+class Day06 : Day(
+    6,
+    2023,
+    "Wait For It",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Race(val time: Long, val distance: Long) {
         /**

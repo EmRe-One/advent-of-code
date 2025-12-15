@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.chineseRemainder
 
-class Day20 : Day(20, 2023, "Pulse Propagation") {
+class Day20 : Day(
+    20,
+    2023,
+    "Pulse Propagation",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     sealed class Module(val name: String, val destinations: List<String>) {
         abstract fun process(input: String, pulse: Boolean): List<Pair<String, Boolean>>

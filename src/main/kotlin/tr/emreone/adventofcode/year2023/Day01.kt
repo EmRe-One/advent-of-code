@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day01 : Day(1, 2023, "Trebuchet?!") {
+class Day01 : Day(
+    1,
+    2023,
+    "Trebuchet?!",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     private val spelledDigits = mapOf(
         "one" to 1, "two" to 2, "three" to 3, "four" to 4, "five" to 5,

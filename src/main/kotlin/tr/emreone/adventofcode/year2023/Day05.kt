@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
 import tr.emreone.kotlin_utils.Logger.logger
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day05 : Day(5, 2023, "If You Give A Seed A Fertilizer") {
+class Day05 : Day(
+    5,
+    2023,
+    "If You Give A Seed A Fertilizer",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Process {
         private var steps =

@@ -1,5 +1,6 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.data_structures.Dijkstra
 import tr.emreone.kotlin_utils.data_structures.Graph
@@ -7,7 +8,12 @@ import tr.emreone.kotlin_utils.extensions.area
 import tr.emreone.kotlin_utils.extensions.formatted
 import tr.emreone.kotlin_utils.math.*
 
-class Day17 : Day(17, 2023, "Clumsy Crucible") {
+class Day17 : Day(
+    17,
+    2023,
+    "Clumsy Crucible",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     val heatMap = inputAsGrid.map { it.map { it.digitToInt() } }
     val area = heatMap.area

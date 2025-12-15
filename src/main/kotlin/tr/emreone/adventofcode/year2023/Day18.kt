@@ -1,5 +1,6 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.extensions.MutableMapGrid
 import tr.emreone.kotlin_utils.extensions.area
@@ -8,7 +9,12 @@ import tr.emreone.kotlin_utils.math.*
 import java.util.*
 import kotlin.math.abs
 
-class Day18 : Day(18, 2023, "Lavaduct Lagoon") {
+class Day18 : Day(
+    18,
+    2023,
+    "Lavaduct Lagoon",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     override fun part1(): Int {
         val instructions = inputAsList.map {

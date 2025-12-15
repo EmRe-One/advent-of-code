@@ -1,11 +1,17 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.Coords
 import tr.emreone.kotlin_utils.math.Direction4
 import tr.emreone.kotlin_utils.math.plus
 
-class Day14 : Day(14, 2023, "Parabolic Reflector Dish") {
+class Day14 : Day(
+    14,
+    2023,
+    "Parabolic Reflector Dish",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Platform(input: List<String>) {
         val grid = input.map {

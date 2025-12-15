@@ -7,7 +7,7 @@ import tr.emreone.kotlin_utils.automation.log
 class Day25 : Day(
     25,
     2024,
-    "",
+    "Code Chronicle",
     session = Resources.resourceAsString("session.cookie")
 ) {
 

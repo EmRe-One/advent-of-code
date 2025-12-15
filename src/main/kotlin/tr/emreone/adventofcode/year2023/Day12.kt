@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
 import tr.emreone.adventofcode.CacheSupport.withCaching
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day12 : Day(12, 2023, "Hot Springs") {
+class Day12 : Day(
+    12,
+    2023,
+    "Hot Springs",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     data class State(
         val charIndex: Int,

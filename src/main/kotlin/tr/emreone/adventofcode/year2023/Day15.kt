@@ -1,8 +1,14 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 
-class Day15 : Day(15, 2023, "Lens Library") {
+class Day15 : Day(
+    15,
+    2023,
+    "Lens Library",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Lens(val label: String, val focalLength: Int? = null) {
 

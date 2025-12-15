@@ -1,10 +1,16 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import tr.emreone.kotlin_utils.math.Coords
 import tr.emreone.kotlin_utils.math.manhattanDistanceTo
 
-class Day11 : Day(11, 2023, "Cosmic Expansion") {
+class Day11 : Day(
+    11,
+    2023,
+    "Cosmic Expansion",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Galaxy(x: Int, y: Int) {
         var coord = Coords(x, y)

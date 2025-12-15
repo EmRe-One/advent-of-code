@@ -6,7 +6,7 @@ import tr.emreone.kotlin_utils.automation.Day
 class Day19 : Day(
     19,
     2024,
-    "",
+    "Linen Layout",
     session = Resources.resourceAsString("session.cookie")
 ) {
     private val towelPatterns = inputAsGroups[0][0].split(",").map { it.trim() }.toSet()

@@ -1,9 +1,15 @@
 package tr.emreone.adventofcode.year2023
 
+import tr.emreone.kotlin_utils.Resources
 import tr.emreone.kotlin_utils.automation.Day
 import java.util.*
 
-class Day10 : Day(10, 2023, "Pipe Maze") {
+class Day10 : Day(
+    10,
+    2023,
+    "Pipe Maze",
+    session = Resources.resourceAsString("session.cookie")
+) {
 
     class Maze(input: List<List<Char>>) {
         val NORTH_EAST = '└'  // oder 'L'
