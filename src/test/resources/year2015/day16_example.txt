@@ -1,0 +1,1 @@
+Sue 1: goldfish: 0, trees: 0, akitas: 0
