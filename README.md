@@ -2,8 +2,8 @@
 
 # 🎄 Advent of Code
 
-![Stars](https://img.shields.io/badge/⭐_Stars-286_of_524-ffcc00?style=for-the-badge)
-![Days](https://img.shields.io/badge/📅_Days-143_of_262-blue?style=for-the-badge)
+![Stars](https://img.shields.io/badge/⭐_Stars-297_of_524-ffcc00?style=for-the-badge)
+![Days](https://img.shields.io/badge/📅_Days-148_of_262-blue?style=for-the-badge)
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9-7F52FF?style=for-the-badge&logo=kotlin)
 
 My solution for [Advent of Code](https://adventofcode.com) puzzles written in Kotlin. <br>
@@ -1482,7 +1482,7 @@ gradle generateAocTiles
 </details>
 
 <details>
-<summary>2015 (30 / 50)</summary>
+<summary>2015 (41 / 50)</summary>
 
 <table align="center">
   <tr>
@@ -1633,8 +1633,8 @@ gradle generateAocTiles
 
 | Kategorie                | Wert        |
 |--------------------------|-------------|
-| **Total Stars**          | ⭐ 286 / 524 |
-| **Finished Days**        | 143 / 262   |
+| **Total Stars**          | ⭐ 297 / 524 |
+| **Finished Days**        | 148 / 262   |
 | **Number of Code lines** | ~0          |
 
 ---
